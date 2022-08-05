@@ -1,4 +1,22 @@
 import React from 'react';
+import data from './data.json';
+
+const dailyInfo = data.map((daily) => daily);
+console.log(dailyInfo);
+
+const fetchDataDaily = () => {
+
+
+
+};
+
+const fetchDataWeekly = () => {
+    console.log(data[0].title);
+};
+
+const fetchDataMonthly = () => {
+    console.log(data[0].title);
+};
 
 const Time = () => {
     return (
@@ -9,11 +27,17 @@ const Time = () => {
                 <h1>Jeremy Robson</h1>
             </div>
             <div>
-                <a href="">Daily</a>
-                <a href="">Weekly</a>
-                <a href="">Monthly</a>
+                <button onClick={fetchDataDaily}>Daily</button>
+                <button onClick={fetchDataWeekly}>Weekly</button>
+                <button onClick={fetchDataMonthly}>Monthly</button>
             </div>
 
+            <div>
+
+
+
+
+            </div>
 
         </div>
     );
