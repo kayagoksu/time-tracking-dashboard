@@ -1,4 +1,6 @@
 import React from 'react';
+import TitleBg from './TitleBg';
+import { ThreeDots } from 'react-bootstrap-icons';
 
 const Data = ({ items, timeframe }) => {
 
@@ -9,26 +11,37 @@ const Data = ({ items, timeframe }) => {
 
                 return (
                     <div key={id}>
-                        <h2>{title}</h2>
+                        <div className='card'>
+                            <TitleBg title={title} />
+                        </div>
+                        <div className='card'>
 
-                        {timeframe === 'daily' ?
-                            <>
-                                <h2>Daily Current: {timeframes.daily.current}</h2>
-                                <h2>Daily Previous: {timeframes.daily.previous}</h2>
-                            </>
-                            : timeframe === 'weekly' ?
+                            <div>
+                                <h2 className='d-flex justify-content-between'>{title}
+                                    <button className='btn' type='button'>
+                                        <h2><ThreeDots /></h2>
+                                    </button></h2>
+
+                            </div>
+
+                            {timeframe === 'daily' ?
                                 <>
-                                    <h2>Weekly Current: {timeframes.weekly.current}</h2>
-                                    <h2>Weekly Previous: {timeframes.weekly.previous}</h2>
+                                    <h2>{timeframes.daily.current}hrs</h2>
+                                    <h2>Yesterday - {timeframes.daily.previous}hrs</h2>
                                 </>
-                                : timeframe === 'monthly' ?
+                                : timeframe === 'weekly' ?
                                     <>
-                                        <h2>Monthly Current: {timeframes.monthly.current}</h2>
-                                        <h2>Monthly Previous: {timeframes.monthly.previous}</h2>
-                                    </> : ""
+                                        <h2>{timeframes.weekly.current}hrs</h2>
+                                        <h2>Last Week - {timeframes.weekly.previous}hrs</h2>
+                                    </>
+                                    : timeframe === 'monthly' ?
+                                        <>
+                                            <h2>{timeframes.monthly.current}hrs</h2>
+                                            <h2>Last Month {timeframes.monthly.previous}hrs</h2>
+                                        </> : ""
 
-                        }
-
+                            }
+                        </div>
                     </div>);
             })}
         </div>

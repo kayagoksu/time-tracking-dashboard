@@ -2,7 +2,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: grey;
+  background-color: hsl(226, 43%, 10%);
   color: aliceblue;
   font-family: 'Rubik', sans-serif;
 }
@@ -17,4 +17,38 @@ h2 {
 
 h4 {
   font-weight: 300;
+}
+
+.img-thumbnail {
+  border-radius: 100%;
+}
+
+.btn {
+  border: none;
+  color: hsl(235, 45%, 61%);
+}
+
+.bg {
+  background-color: hsl(235, 46%, 20%);
+}
+
+.card {
+  background-color: hsl(235, 46%, 20%);
+}
+
+.card:hover {
+    background-color: hsl(235, 45%, 61%,0.5);
+    cursor: pointer;
+}
+
+.bg-work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.bg-play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.bg-study {
+  background-color: hsl(348, 100%, 68%);
 }

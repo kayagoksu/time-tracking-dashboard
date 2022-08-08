@@ -13,14 +13,20 @@ function App() {
   };
 
   return (
-    <div>
-      <h4>Report for</h4>
-      <h1>Jeremy Robson</h1>
-      <button id="daily" onClick={changeTimeframe}>Daily</button>
-      <button id="weekly" onClick={changeTimeframe}>Weekly</button>
-      <button id="monthly" onClick={changeTimeframe}>Monthly</button>
-      <Data items={data} timeframe={timeframe} />
-    </div>
+    <>
+      <div className="bg">
+        <img src="./images/image-jeremy.png" alt="Jeremy Robson image" className="img-thumbnail" />
+        <div>Report for</div>
+        <h1 className="display-4">Jeremy Robson</h1>
+        <button id="daily" className="btn" onClick={changeTimeframe}>Daily</button>
+        <button id="weekly" className="btn" onClick={changeTimeframe}>Weekly</button>
+        <button id="monthly" className="btn" onClick={changeTimeframe}>Monthly</button>
+      </div>
+      <div>
+
+        <Data items={data} timeframe={timeframe} />
+      </div>
+    </>
   );
 }
 
