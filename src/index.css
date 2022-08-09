@@ -37,7 +37,7 @@ h4 {
 }
 
 .card:hover {
-    background-color: hsl(235, 45%, 61%,0.5);
+    background-color: hsl(235, 45%, 61%, 0.5);
     cursor: pointer;
 }
 
@@ -51,4 +51,16 @@ h4 {
 
 .bg-study {
   background-color: hsl(348, 100%, 68%);
+}
+
+.bg-exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.bg-social {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.bg-selfcare {
+  background-color: hsl(43, 84%, 65%);
 }

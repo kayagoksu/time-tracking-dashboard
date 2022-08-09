@@ -18,7 +18,7 @@ const Data = ({ items, timeframe }) => {
 
                             <div>
                                 <h2 className='d-flex justify-content-between'>{title}
-                                    <button className='btn' type='button'>
+                                    <button className='btn pe-5' type='button'>
                                         <h2><ThreeDots /></h2>
                                     </button></h2>
 
