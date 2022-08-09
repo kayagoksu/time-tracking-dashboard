@@ -5,23 +5,25 @@ import { ThreeDots } from 'react-bootstrap-icons';
 const Data = ({ items, timeframe }) => {
 
     return (
-        <div>
+        <div className='row'>
+
             {items.map((data) => {
                 const { id, title, timeframes } = data;
 
                 return (
-                    <div key={id}>
-                        <div className='card'>
+                    <div key={id} className='col-4' >
+                        <div className='card card-data'>
                             <TitleBg title={title} />
                         </div>
-                        <div className='card'>
+
+
+                        <div className='card card-data'>
 
                             <div>
-                                <h2 className='d-flex justify-content-between'>{title}
+                                <h2 className='d-flex justify-content-between align-items-center'>{title}
                                     <button className='btn pe-5' type='button'>
                                         <h2><ThreeDots /></h2>
                                     </button></h2>
-
                             </div>
 
                             {timeframe === 'daily' ?
@@ -39,12 +41,13 @@ const Data = ({ items, timeframe }) => {
                                             <h2>{timeframes.monthly.current}hrs</h2>
                                             <h2>Last Month {timeframes.monthly.previous}hrs</h2>
                                         </div> : ""
-
                             }
                         </div>
-                    </div>);
+                    </div>
+                );
             })}
         </div>
+
     );
 };
 

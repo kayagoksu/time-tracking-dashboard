@@ -21,10 +21,8 @@ const TitleBg = ({ title }) => {
                                 <img src="./images/icon-exercise.svg" alt="exercise" />
                             </div>
                             : title === 'Social' ?
-                                <div className='bg-social'>
-
+                                <div className='bg-social d-flex justify-content-end pe-3'>
                                     <img src="./images/icon-social.svg" alt="social" />
-
                                 </div>
                                 : title === 'Self Care' ?
                                     <div className='bg-selfcare d-flex justify-content-end pe-3'>

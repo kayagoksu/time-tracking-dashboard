@@ -15,21 +15,21 @@ h2 {
   font-weight: 400;
 }
 
-h4 {
+h4,h5,h6 {
   font-weight: 300;
 }
 
-img {
-  max-height: 10rem;
-}
 
-.img-thumbnail {
-  border-radius: 10rem;
+img {
+  width: 5rem;
+  border: 2px solid white;
+  border-radius: 50%;
 }
 
 .btn {
   border: none;
   color: hsl(235, 45%, 61%);
+  padding-left: 0 !important;
 }
 
 .bg {
@@ -37,10 +37,14 @@ img {
 }
 
 .card {
+  border-radius: 0.75rem;
+}
+
+.card-data {
   background-color: hsl(235, 46%, 20%);
 }
 
-.card:hover {
+.card-data:hover {
     background-color: hsla(235, 45%, 61%);
     cursor: pointer;
 }
@@ -71,4 +75,13 @@ img {
 
 .bg-height {
   height: 3rem;
+}
+
+.card-person{
+  background-color: hsl(246, 80%, 60%);
+  height: 25rem;
+}
+
+.card-timeframes {
+  background-color: hsl(235, 46%, 20%);
 }
