@@ -19,8 +19,12 @@ h4 {
   font-weight: 300;
 }
 
+img {
+  max-height: 10rem;
+}
+
 .img-thumbnail {
-  border-radius: 100%;
+  border-radius: 10rem;
 }
 
 .btn {
@@ -37,7 +41,7 @@ h4 {
 }
 
 .card:hover {
-    background-color: hsl(235, 45%, 61%, 0.5);
+    background-color: hsla(235, 45%, 61%);
     cursor: pointer;
 }
 
@@ -63,4 +67,8 @@ h4 {
 
 .bg-selfcare {
   background-color: hsl(43, 84%, 65%);
+}
+
+.bg-height {
+  height: 3rem;
 }

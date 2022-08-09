@@ -25,20 +25,20 @@ const Data = ({ items, timeframe }) => {
                             </div>
 
                             {timeframe === 'daily' ?
-                                <>
+                                <div>
                                     <h2>{timeframes.daily.current}hrs</h2>
                                     <h2>Yesterday - {timeframes.daily.previous}hrs</h2>
-                                </>
+                                </div>
                                 : timeframe === 'weekly' ?
-                                    <>
+                                    <div>
                                         <h2>{timeframes.weekly.current}hrs</h2>
                                         <h2>Last Week - {timeframes.weekly.previous}hrs</h2>
-                                    </>
+                                    </div>
                                     : timeframe === 'monthly' ?
-                                        <>
+                                        <div>
                                             <h2>{timeframes.monthly.current}hrs</h2>
                                             <h2>Last Month {timeframes.monthly.previous}hrs</h2>
-                                        </> : ""
+                                        </div> : ""
 
                             }
                         </div>
