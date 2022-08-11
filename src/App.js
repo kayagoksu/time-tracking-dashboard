@@ -20,7 +20,7 @@ function App() {
                         <div className="col-3">
                             <div className="card card-timeframes d-flex align-items-start">
                                 <div className="card card-person ps-2">
-                                    <img src="./images/image-jeremy.png" alt="Jeremy Robson image" className="mt-5" />
+                                    <img src="./images/image-jeremy.png" alt="Jeremy Robson image" className="img-person mt-5" />
                                     <h6 className="mt-5">Report for</h6>
                                     <h1 className="display-6">Jeremy Robson</h1>
                                 </div>
