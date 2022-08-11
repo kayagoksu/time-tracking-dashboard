@@ -20,10 +20,10 @@ const Data = ({ items, timeframe }) => {
                         <div className='card card-data'>
 
                             <div>
-                                <h2 className='d-flex justify-content-between align-items-center'>{title}
-                                    <button className='btn pe-5' type='button'>
+                                <h5 className='d-flex justify-content-between align-items-center px-4'>{title}
+                                    <button className='btn' type='button'>
                                         <h2><ThreeDots /></h2>
-                                    </button></h2>
+                                    </button></h5>
                             </div>
 
                             {timeframe === 'daily' ?
