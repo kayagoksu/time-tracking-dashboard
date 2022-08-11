@@ -60,26 +60,32 @@ h4,h5,h6 {
 
 .bg-work {
   background-color: hsl(15, 100%, 70%);
+  border-radius: 0.75rem;
 }
 
 .bg-play {
   background-color: hsl(195, 74%, 62%);
+  border-radius: 0.75rem;
 }
 
 .bg-study {
   background-color: hsl(348, 100%, 68%);
+  border-radius: 0.75rem;
 }
 
 .bg-exercise {
   background-color: hsl(145, 58%, 55%);
+  border-radius: 0.75rem;
 }
 
 .bg-social {
   background-color: hsl(264, 64%, 52%);
+  border-radius: 0.75rem;
 }
 
 .bg-selfcare {
   background-color: hsl(43, 84%, 65%);
+  border-radius: 0.75rem;
 }
 
 .bg-height {

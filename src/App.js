@@ -18,13 +18,13 @@ function App() {
                 <section className="container">
                     <div className="row">
                         <div className="col-3">
-                            <div className="card card-timeframes d-flex align-items-start">
+                            <div className="card card-timeframes d-flex text-start">
                                 <div className="card card-person ps-2">
                                     <img src="./images/image-jeremy.png" alt="Jeremy Robson image" className="img-person mt-5" />
                                     <h6 className="mt-5">Report for</h6>
                                     <h1 className="display-6">Jeremy Robson</h1>
                                 </div>
-                                <div className="mt-5 mb-5 ps-2">
+                                <div className="mt-5 mb-5 ps-2 text-start">
                                     <div>
                                         <button id="daily" className="btn" onClick={changeTimeframe}>Daily</button>
                                     </div>
