@@ -12,35 +12,35 @@ const Data = ({ items, timeframe }) => {
                     const { id, title, timeframes } = data;
 
                     return (
-                        <div key={id} className='col-4 mb-5'>
+                        <div key={id} className='col-4'>
                             <div className='card card-data'>
                                 <TitleBg title={title} />
                             </div>
 
 
-                            <div className='card card-data d-flex'>
+                            <div className='card card-data text-start px-4'>
 
                                 <div>
-                                    <h5 className='d-flex justify-content-between align-items-center px-4'>{title}
+                                    <h5 className='d-flex justify-content-between align-items-center'>{title}
                                         <button className='btn' type='button'>
                                             <h2><ThreeDots /></h2>
                                         </button></h5>
                                 </div>
 
                                 {timeframe === 'daily' ?
-                                    <div>
-                                        <h2>{timeframes.daily.current}hrs</h2>
-                                        <h2>Yesterday - {timeframes.daily.previous}hrs</h2>
+                                    <div className='mb-4'>
+                                        <div className='display-4 mb-2'>{timeframes.daily.current}hrs</div>
+                                        <h6>Yesterday - {timeframes.daily.previous}hrs</h6>
                                     </div>
                                     : timeframe === 'weekly' ?
                                         <div>
-                                            <h2>{timeframes.weekly.current}hrs</h2>
-                                            <h2>Last Week - {timeframes.weekly.previous}hrs</h2>
+                                            <div className='display-4 mb-2'>{timeframes.weekly.current}hrs</div>
+                                            <h6>Last Week - {timeframes.weekly.previous}hrs</h6>
                                         </div>
                                         : timeframe === 'monthly' ?
                                             <div>
-                                                <h2>{timeframes.monthly.current}hrs</h2>
-                                                <h2>Last Month {timeframes.monthly.previous}hrs</h2>
+                                                <div className='display-4 mb-2'>{timeframes.monthly.current}hrs</div>
+                                                <h6>Last Month {timeframes.monthly.previous}hrs</h6>
                                             </div> : ""
                                 }
                             </div>

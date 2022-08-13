@@ -26,6 +26,7 @@ h2,h3,h4,h5 {
 
 h6 {
   font-weight: 300;
+  color: hsl(235, 100%, 82%);
 }
 
 
@@ -89,12 +90,12 @@ h6 {
 }
 
 .bg-height {
-  height: 3rem;
+  height: 50px;
 }
 
 .card-person{
   background-color: hsl(246, 80%, 60%);
-  height: 25rem;
+  /* height: 20rem; */
 }
 
 .card-timeframes {

@@ -22,9 +22,9 @@ function App() {
                                 <div className="card card-person px-4">
                                     <img src="./images/image-jeremy.png" alt="Jeremy Robson image" className="img-person mt-5" />
                                     <h6 className="mt-5">Report for</h6>
-                                    <h1 className="display-6">Jeremy Robson</h1>
+                                    <h1 className="display-6 mb-5">Jeremy Robson</h1>
                                 </div>
-                                <div className="mt-5 mb-5 text-start px-4">
+                                <div className="mt-3 mb-3 text-start px-4">
                                     <div>
                                         <button id="daily" className="btn" onClick={changeTimeframe}>Daily</button>
                                     </div>
