@@ -37,7 +37,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-9">
+                        <div className="col-9 px-0">
                             <div>
                                 <Data items={data} timeframe={timeframe} />
                             </div>
